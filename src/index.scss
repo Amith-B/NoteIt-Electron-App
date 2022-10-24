@@ -1,0 +1,115 @@
+:root {
+  --outer-curve-size: 20px;
+  --outer-curve-size-half: calc(var(--outer-curve-size) / 2);
+  --shadow: 0px 2px 12px -4px #181616a3;
+  --shadow-inset: inset 0px 2px 8px -4px #181616a3;
+}
+
+.theme {
+  &.default {
+    --primary-bg: antiquewhite;
+    --tab-theme-bg: #ffc760;
+    --tab-add-bg: #ffffffbc;
+    --tab-inactive-bg: #ffffff9c;
+    --text-color: black;
+    --icon-filter: invert(0);
+  }
+  &.blue {
+    --primary-bg: #c6cdff;
+    --tab-theme-bg: #4266ff;
+    --tab-add-bg: #ffffffbc;
+    --tab-inactive-bg: #ffffff9c;
+    --text-color: black;
+    --icon-filter: invert(0);
+  }
+  &.pink {
+    --primary-bg: #ffaef4;
+    --tab-theme-bg: deeppink;
+    --tab-add-bg: #ffffffbc;
+    --tab-inactive-bg: #ffffff9c;
+    --text-color: black;
+    --icon-filter: invert(0);
+  }
+  &.purple {
+    --primary-bg: #b58fcd;
+    --tab-theme-bg: #7c51d5;
+    --tab-add-bg: #ffffffbc;
+    --tab-inactive-bg: #ffffff9c;
+    --text-color: white;
+    --icon-filter: invert(0);
+  }
+  &.darkgreen {
+    --primary-bg: #5e7971;
+    --tab-theme-bg: #18473c;
+    --tab-add-bg: #ffffffbc;
+    --tab-inactive-bg: #ffffff9c;
+    --text-color: white;
+    --icon-filter: invert(1);
+  }
+  &.dark {
+    --primary-bg: rgb(74, 74, 74);
+    --tab-theme-bg: #242424;
+    --tab-add-bg: #ffffffbc;
+    --tab-inactive-bg: #ffffff9c;
+    --text-color: white;
+    --icon-filter: invert(1);
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root,
+.App {
+  height: 100%;
+  overflow: hidden;
+}
+
+.App {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+button {
+  border: 0;
+}
+
+.clickable {
+  opacity: 0.9;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

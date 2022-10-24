@@ -1,0 +1,59 @@
+.tab-content {
+  height: calc(100% - 80px);
+  position: relative;
+  margin-top: 10px;
+
+  &__container {
+    height: 100%;
+    padding: 10px;
+    position: relative;
+  }
+  &__no-tab {
+    height: 100%;
+    color: var(--text-color);
+  }
+  &__title-container {
+    height: 50px;
+    position: relative;
+  }
+  &-input,
+  &__title-input {
+    width: 100%;
+    border: 0;
+    height: 30px;
+    background-color: var(--tab-inactive-bg);
+    position: absolute;
+    left: 0;
+    top: 20px;
+    outline: none;
+    border-radius: 6px;
+  }
+  &-input {
+    height: 100%;
+    resize: none;
+  }
+}
+
+label {
+  position: absolute;
+  transform: unset;
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--tab-theme-bg);
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-top: -2px;
+  color: var(--text-color);
+}
+
+input.empty:not(:focus) + label,
+textarea.empty:not(:focus) + label {
+  transform: translate(4px, 24px);
+  font-size: 16px;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+  background-color: unset;
+  padding: unset;
+  border-radius: unset;
+  color: unset;
+}
