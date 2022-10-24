@@ -4,6 +4,7 @@
   "private": true,
   "productName": "Notes",
   "main": "main.js",
+  "homepage": "./",
   "dependencies": {
     "electron": "^21.2.0",
     "json-as-xlsx": "^2.4.2",

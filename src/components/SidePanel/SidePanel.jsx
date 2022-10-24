@@ -2,7 +2,6 @@ import "./SidePanel.scss";
 import React, { useContext, useState } from "react";
 import NotesContext from "../../context/notesContext";
 import edit from "../../assets/edit.svg";
-import getFilePath from "../../utils/resolveFilePath";
 
 function SidePanel({ open, onClose }) {
   const {
@@ -93,7 +92,7 @@ function SidePanel({ open, onClose }) {
                       >
                         <img
                           style={{ height: "12px" }}
-                          src={getFilePath(edit)}
+                          src={edit}
                           alt="rename"
                         />
                       </div>

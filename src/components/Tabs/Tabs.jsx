@@ -12,7 +12,6 @@ import hamburger from "../../assets/hamburger.svg";
 import arrowLeft from "../../assets/arrow-previous-left.svg";
 import SidePanel from "../SidePanel/SidePanel";
 import { downloadXLSX, downloadJSON } from "../../utils/downloadNotes";
-import getFilePath from "../../utils/resolveFilePath";
 
 function Tabs({ onSidePanelToggle }) {
   const {
@@ -88,7 +87,7 @@ function Tabs({ onSidePanelToggle }) {
       >
         <img
           style={{ height: "16px" }}
-          src={getFilePath(panelOpen ? arrowLeft : hamburger)}
+          src={panelOpen ? arrowLeft : hamburger}
           alt="3-dot"
         />
       </button>
@@ -135,11 +134,7 @@ function Tabs({ onSidePanelToggle }) {
         className="clickable notes-menu__toggle flex-center"
         onClick={() => setMenuOpen(true)}
       >
-        <img
-          style={{ height: "16px" }}
-          src={getFilePath(verticalDot)}
-          alt="3-dot"
-        />
+        <img style={{ height: "16px" }} src={verticalDot} alt="3-dot" />
       </button>
       <div
         className={"notes-menu__overlay " + (menuOpen ? "visible" : "")}

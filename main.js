@@ -9,6 +9,7 @@ function runApplication() {
     title: "Notes",
     width: 800,
     height: 500,
+    icon: __dirname + "/build/favicon.ico",
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, "preload.js"),

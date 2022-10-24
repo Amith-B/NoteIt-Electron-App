@@ -4,6 +4,6 @@
 
 ## Install Packages with: `npm install`
 
-## To run the project: `npm start`
+## To build react app: `npm run build`
 
-## To build: `npm run build`
+## To run the build with electron: `npm run start-electron`
