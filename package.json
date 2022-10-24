@@ -14,8 +14,9 @@
   },
   "scripts": {
     "start-electron": "electron .",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-react": "react-scripts start",
+    "build-react": "react-scripts build",
+    "build": "electron-packager . NoteIt --platform=win32 --arch=x64",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch": "npm-watch"
@@ -39,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "electron-packager": "^17.0.0",
     "npm-watch": "^0.11.0",
     "sass": "^1.53.0"
   },
